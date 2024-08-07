@@ -1,64 +1,67 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Aula 01 - Tags</title>
+        <title>Aula Tabela</title>
     </head>
     <body>
-        <!-- Comentario de Parágrafo -->
-        <p>Isto é um parágrafo.</p>
-        
-        <!-- Comentario de Cabeçalhos -->
-        <h1>Titulo de nivel 1</h1>
-        <h2>Titulo de nivel 2</h2>
-        <h3>Titulo de nivel 3</h3>
-        <h4>Titulo de nivel 4</h4>
-        <h5>Titulo de nivel 5</h5>
-
-        <!-- Exemplo de Links -->
-        <a href="https://www.globo.com/">Globo</a>
-        <a href="https://www.globo.com/" target="_blank">Globo</a>
-
-        <!-- Exemplo de imagem-->
-        <img src="programacao.jpeg" alt="Programacao">
-        <img src="https://images.educamaisbrasil.com.br/content/noticias/dicas-para-comecar-na-carreira-de-programacao-em-2024_g.jpg">
-        
-        <!-- Lista não ordenada -->
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul> 
-
-        <!-- Lista ordenada -->
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
-
-        <!-- Exemplo de tabela-->
-        <table>
+        <!-- Tabela Simples -->
+        <table style="width: 50%", border="1">
             <tr>
-                <th>Nome:</th>
-                <th>Idade:</th>
-                <th>Sexo</th>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th colspan="2">Endereço</th>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>18 Anos</td>
+                <td>Avenida Raulino Gabriel de Córdova, 2041</td>
+                <td>Morro Alto</td>
+            </tr>
+            <tr>
+                <td>Nicolas</td>
+                <td>19 Anos</td>
+                <td>Avenida Sebastião de Camargo Ribas, 131</td>
+                <td>São Cristovão</td>
             </tr>
             <tr>
                 <td>Matheus</td>
-                <td>26 anos</td>
-                <td>Masculino</td>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>30 anos</td>
-                <td>Feminino</td>
+                <td>26 Anos</td>
+                <td>Avenida Manoel Ribas, 2286</td>
+                <td>Centro</td>
             </tr>
         </table>
         
-        <div>
-            <h1>Exemplo de h1 na div</h1>
-            <p>Paragrafo na div</p>
-        </div>
+        <!-- Tabela com Colspan-->
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>Camiseta</td>
+                <td>R$ 29,99</td>
+                <td>2</td>
+                <td>R$ 60,00</td>
+            </tr>
+            <tr>
+                <td>Calça Jeans</td>
+                <td>R$ 89,90</td>
+                <td>1</td>
+                <td>R$ 89,90</td>
+            </tr>
+            <tr>
+                <td>Calçado Adidas Campus '00s</td>
+                <td>R$ 499,90</td>
+                <td>1</td>
+                <td>R$ 499,90</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total Geral</td>
+                <td>R$ 649,80</td>
+            </tr>
+        </table>  
     </body>
 </html>
