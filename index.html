@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Aula 5 - Formulários</title>
-    </head>
-    <body>
-        <h1>Formulário Teste</h1>
-        <form action="#" method="POST">
-            <fieldset>
-                
-                <label for="nome">Nome:</label>
-                <input type="text" id="name" name="nome" required>
-                <br><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br><br>
-                
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade" required>
-                <br><br>
-                
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" required></textarea>
-                <br><br>
-                <input type="submit" value="Enviar">
-                <br><br>
+<head>
+    <meta charset="UTF-8">     
+    <title>Aula CSS</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+   
+<body>
+    <header class="header">
+        <h1>Aula - CSS</h1>
+        
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
 
-                <label for="dataEnt">Data de Entrega:</label>
-                <input type="date" id="dataEnt" name="dataEnt">
-                <br><br>
+    <section class="pic">
+        <div>
+            <img src="./asseys/pic.webp" alt="Flor Alaranjada">
+            <p>Flor Alaranjada</p>
+        </div>
+        
+        <div>
+            <img src="./asseys/comida-caseira.jpg" alt="Prato de Comida Típica Brasileira">
+            <p>Comida Típica Brasileira</p>
+        </div>
+    </section>
 
-                </fieldset>
-        </form>    
-    </body>
+    <footer class="footer">
+        <p>&copy; 2024. joaolack. Todos os direitos reservados  </p>
+    </footer>
+
+
+</body>
 </html>
